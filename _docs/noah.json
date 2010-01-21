@@ -1,0 +1,5 @@
+{
+    "_id": "noah",
+    "amqp_uri": "amqp://noah:foo@rabbitmq.hkinternal.com/noah",
+	"ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA69eVok5QTKtn2NAZVwzUVqf4uGiBlgrLS4b7IPVcltFKjABst+fmNB1yONnipxZrRm5dpNnaTrG67XLAwMhGv1g0eZCtK6Ryuz9mX+uoBsVasqX1FNSCdveeNpDKjCyLnda7hSXDy2fOIk1O+ZI+jEgjQW1zsJsfxs3mpEXRwcw8T75Tub8A5RIXcMumkb5kW0kUqQP1QHzDg/3iOJLh9S3Mp8EuQnMdqhI2m+3eCgX9Upd3w1iXy9Wu336A0p1Re+40Prq5b8FzOngleiiIcQtMZ0yiPOZOnNUBkPvdttB4IJQk9BzAs028ncn73IpCgBV9xSVzVuRVClNq7qM6Ow== noah@Hero-Sr.local"
+}
