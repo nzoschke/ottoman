@@ -1,7 +1,31 @@
 #!/bin/bash
+# initialize a couchdb database
+$ couchapp generate developers # database name ~= table
+$ cd developers
+
+# import some initial JSON documents with developer settings
+$ mkdir _docs
+$ cat > _docs/noah.json <<EOF
+{
+    "_id": "noah",
+    "amqp_uri": "amqp://noah:foo@rabbitmq.hkinternal.com/noah",
+	"ssh_public_key": "ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEA69eVok5QTKtn2NAZVwzUVqf4uGiBlgrLS4b7IPVcltFKjABst+fmNB1yONnipxZrRm5dpNnaTrG67XLAwMhGv1g0eZCtK6Ryuz9mX+uoBsVasqX1FNSCdveeNpDKjCyLnda7hSXDy2fOIk1O+ZI+jEgjQW1zsJsfxs3mpEXRwcw8T75Tub8A5RIXcMumkb5kW0kUqQP1QHzDg/3iOJLh9S3Mp8EuQnMdqhI2m+3eCgX9Upd3w1iXy9Wu336A0p1Re+40Prq5b8FzOngleiiIcQtMZ0yiPOZOnNUBkPvdttB4IJQk9BzAs028ncn73IpCgBV9xSVzVuRVClNq7qM6Ow== noah@Hero-Sr.local"
+}
+EOF
+
+$ cat > _docs/noah.json <<EOF
+{
+    "_id": "adam",
+    "amqp_uri": "amqp://adam:SLIUersl398ELSj@rabbitmq.hkinternal.com/adam",
+	"ssh_public_key": "ssh-dss AAAAB3NzaC1kc3MAAACBAIR4MXejA7H8AupwmebkW0VIprAvKUw22Es/iEtlXKX5ZapmnB9wqP2Uq4iaWHHEmEWii6dzyjLLm/+VDDw40EZpfBnGABNU280uznPhYE80noXQe7YnlyFqpI1guvhHl+c5O4sYKVHWjo0c9ZzGGDR4FQV8nrf1kvtIBVibtEqPAAAAFQD5mQoz+F5zzsGSnaSXLG9YUkRF8wAAAIA0uvjfbQ1/cJRkrt6fTkhWnVt2G9MyaWWPWp7EAyEvkYdfdJXkilkAguooL1ySYOTR5kiFXkOrzBjYsDUgCShi+XxcSEW+3c1K2wc1UMFBVBHDQ6GmnrpNatDXrlCjugjOhGaS4Fzyg+R7CJNdS9hpS2k3OgeFV7QW5zA0sg6KVAAAAIAlWnZ1WXNblepXYE3wqd5Dr8a9xbTeYglI9aUvc7W5T6ZrebyF/ccAHLFwHYuJVFABlb2Q1Mrlf01Mdsa/s0ZYXbN8W3zoqdSU+JCQfddHmTtR4WGnMO07o9EYln3vIQ6vfww94jPuNa2mCh9lgdn7BOicmM8ZFltNNbjvaFKUOQ== adam@fenris"
+}
+EOF
+
 $ curl -X GET http://127.0.0.1:5984/developers/noah
 $ curl -X GET http://127.0.0.1:5984/developers/adam
+$ open http://127.0.0.1:5984/_utils/index.html
 
+# create views to aggregate data, and lists to reformat
 $ couchapp generate view ssh_public_keys
 $ ls -A views/ssh_public_keys/
 map.js    reduce.js
