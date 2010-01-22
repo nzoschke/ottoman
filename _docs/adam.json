@@ -1,5 +1,5 @@
 {
     "_id": "adam",
-    "amqp_uri": "amqp://adam:SLIUersl398ELSj@rabbitmq.hkinternal.com/adam",
+    "amqp_uri": "amqp://adam:SLIUersl398ELSj@rabbit-dev.hkinternal.com/adam",
 	"ssh_public_key": "ssh-dss AAAAB3NzaC1kc3MAAACBAIR4MXejA7H8AupwmebkW0VIprAvKUw22Es/iEtlXKX5ZapmnB9wqP2Uq4iaWHHEmEWii6dzyjLLm/+VDDw40EZpfBnGABNU280uznPhYE80noXQe7YnlyFqpI1guvhHl+c5O4sYKVHWjo0c9ZzGGDR4FQV8nrf1kvtIBVibtEqPAAAAFQD5mQoz+F5zzsGSnaSXLG9YUkRF8wAAAIA0uvjfbQ1/cJRkrt6fTkhWnVt2G9MyaWWPWp7EAyEvkYdfdJXkilkAguooL1ySYOTR5kiFXkOrzBjYsDUgCShi+XxcSEW+3c1K2wc1UMFBVBHDQ6GmnrpNatDXrlCjugjOhGaS4Fzyg+R7CJNdS9hpS2k3OgeFV7QW5zA0sg6KVAAAAIAlWnZ1WXNblepXYE3wqd5Dr8a9xbTeYglI9aUvc7W5T6ZrebyF/ccAHLFwHYuJVFABlb2Q1Mrlf01Mdsa/s0ZYXbN8W3zoqdSU+JCQfddHmTtR4WGnMO07o9EYln3vIQ6vfww94jPuNa2mCh9lgdn7BOicmM8ZFltNNbjvaFKUOQ== adam@fenris"
 }
