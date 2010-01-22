@@ -1,8 +1,0 @@
-{
-	"env": {
-		"default": { "db": "http://127.0.0.1:5984/developers" },
-		"production": { "db": "http://heroku:blossomcrane@heroku.cloudant.com:5984/developers" },
-		"production-api": { "db": "http://nedblithersompachadmisla:MDCc4nFaCETPjGIeXfyVrf5A@heroku.cloudant.com:5984/developers" },
-		"read-only": { "db": "http://atteneddervassookettedst:Vm8C3RahLEXDViD2jF0TLpCB@heroku.cloudant.com:5984/developers" }
-	}
-}
